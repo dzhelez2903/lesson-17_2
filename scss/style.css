@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Raleway Light";
+  src: url(../fonts/Raleway-Light.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway Bold";
+  src: url(../fonts/Raleway-Bold.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pacifico";
+  src: url(../fonts/Pacifico.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+.grid-container {
+  margin: 0 auto;
+  max-width: 1500px;
+  min-width: 320px;
+  width: 100%;
+  background: url(../img/background.png) no-repeat;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 11% 33% 11% 33% 11%;
+      grid-template-columns: 11% 33% 11% 33% 11%;
+  -ms-grid-rows: 250px 616px;
+      grid-template-rows: 250px 616px;
+  gap: 0px 0px;
+      grid-template-areas: "Head Head Head Head Head" ". inputs . contacts .";
+}
+
+.grid-container .Head {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: Head;
+  text-align: center;
+}
+
+.grid-container .Head h1 {
+  font-family: "Raleway Bold";
+  font-size: 90px;
+  color: #262626;
+  line-height: 65px;
+  margin-top: 70px;
+}
+
+.grid-container .Head p {
+  font-family: "Raleway Light";
+  font-size: 20px;
+  color: #262626;
+}
+
+.grid-container .Head :nth-child(2) {
+  margin-top: 50px;
+}
+
+.grid-container .inputs {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: inputs;
+}
+
+.grid-container .inputs .input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  background-color: #7ddfdf;
+  opacity: 0.6;
+  font-family: "Raleway Light";
+  font-size: 15px;
+  color: white;
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.grid-container .inputs .input:nth-child(1) {
+  margin-top: 50px;
+}
+
+.grid-container .inputs .input:hover {
+  background-color: #00c4c4;
+}
+
+.grid-container .inputs .input:nth-child(4) {
+  height: 250px;
+  margin-bottom: 0;
+}
+
+.grid-container .inputs .input::-webkit-input-placeholder {
+  font-family: "Raleway Light";
+  font-size: 15px;
+  color: white;
+}
+
+.grid-container .inputs .input:-ms-input-placeholder {
+  font-family: "Raleway Light";
+  font-size: 15px;
+  color: white;
+}
+
+.grid-container .inputs .input::-ms-input-placeholder {
+  font-family: "Raleway Light";
+  font-size: 15px;
+  color: white;
+}
+
+.grid-container .inputs .input::placeholder {
+  font-family: "Raleway Light";
+  font-size: 15px;
+  color: white;
+}
+
+.grid-container .inputs .input:nth-child(4)::-webkit-input-placeholder {
+  -webkit-transform: translate3d(0, -95px, 0);
+          transform: translate3d(0, -95px, 0);
+}
+
+.grid-container .inputs .input:nth-child(4):-ms-input-placeholder {
+  transform: translate3d(0, -95px, 0);
+}
+
+.grid-container .inputs .input:nth-child(4)::-ms-input-placeholder {
+  transform: translate3d(0, -95px, 0);
+}
+
+.grid-container .inputs .input:nth-child(4)::placeholder {
+  -webkit-transform: translate3d(0, -95px, 0);
+          transform: translate3d(0, -95px, 0);
+}
+
+.grid-container .inputs .input:focus {
+  outline: none !important;
+  border-left: 5px solid #355b82;
+  width: calc(100% - 5px);
+}
+
+.grid-container .contacts {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: contacts;
+}
+
+.grid-container .contacts h6 {
+  font-family: "Raleway Bold";
+  font-size: 17px;
+  color: #262626;
+  margin-bottom: 4px;
+}
+
+.grid-container .contacts p {
+  font-family: "Raleway Light";
+  font-size: 20px;
+  color: #262626;
+  margin-bottom: 9px;
+}
+
+.grid-container .contacts :nth-child(1) {
+  margin-top: 50px;
+}
+
+.bottom {
+  margin: 0 auto;
+  max-width: 1500px;
+  min-width: 320px;
+  width: 100%;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #262626;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.bottom :nth-child(2) {
+  font-family: "Pacifico";
+  font-size: 25px;
+  line-height: 18px;
+}
+
+.bottom p {
+  margin-top: 40px;
+  font-family: "Raleway Light";
+  font-size: 16px;
+  color: #b9b9b9;
+}
+
+.bottom p span {
+  color: #ff2b58;
+  font-weight: 600;
+}
+/*# sourceMappingURL=style.css.map */
