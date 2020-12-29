@@ -40,7 +40,7 @@
       grid-template-areas: "Head Head Head Head Head" ". inputs . contacts .";
 }
 
-.grid-container .Head {
+.grid-container .head {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
@@ -48,7 +48,7 @@
   text-align: center;
 }
 
-.grid-container .Head h1 {
+.grid-container .head h1 {
   font-family: "Raleway Bold";
   font-size: 90px;
   color: #262626;
@@ -56,13 +56,13 @@
   margin-top: 70px;
 }
 
-.grid-container .Head p {
+.grid-container .head p {
   font-family: "Raleway Light";
   font-size: 20px;
   color: #262626;
 }
 
-.grid-container .Head :nth-child(2) {
+.grid-container .head :nth-child(2) {
   margin-top: 50px;
 }
 
