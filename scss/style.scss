@@ -24,40 +24,131 @@
   font-style: normal;
 }
 
+@media (max-width: 600px) {
+  .grid-container {
+    margin: 0 auto;
+    max-width: 600px;
+    min-width: 360px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 251px 445px 157px;
+    gap: 0px 0px;
+    grid-template-areas:
+      "head head head"
+      ". inputs ."
+      ". contacts .";
+
+    .head {
+      h1 {
+        font-size: 60px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      :nth-child(2) {
+        margin-top: 0px;
+      }
+    }
+  }
+
+  .contacts {
+    color: rgb(255, 255, 255);
+
+    :nth-child(1) {
+      margin-top: 20px;
+    }
+  }
+
+  .bottom {
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 600px;
+    min-width: 360px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 601px) {
+  .grid-container {
+    margin: 0 auto;
+    max-width: 1500px;
+    min-width: 601px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 11% 33% 11% 33% 11%;
+    grid-template-rows: 250px 616px;
+    gap: 0px 0px;
+    grid-template-areas:
+      "head head head head head"
+      ". inputs . contacts .";
+
+    .head {
+      h1 {
+        font-size: 90px;
+        line-height: 65px;
+        margin-top: 70px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      :nth-child(2) {
+        margin-top: 50px;
+      }
+    }
+
+    .contacts {
+      grid-area: contacts;
+      color: rgb(38, 38, 38);
+
+      h6 {
+        font-size: 17px;
+        margin-bottom: 4px;
+      }
+
+      p {
+        font-size: 20px;
+        margin-bottom: 9px;
+      }
+
+      :nth-child(1) {
+        margin-top: 50px;
+      }
+    }
+  }
+
+  .bottom {
+    max-width: 1500px;
+    min-width: 601px;
+    width: 100%;
+  }
+
+  .input:nth-child(1) {
+    margin-top: 50px;
+  }
+}
+
 .grid-container {
-  margin: 0 auto;
-  max-width: 1500px;
-  min-width: 320px;
-  width: 100%;
   background: url(../img/background.png) no-repeat;
-  display: grid;
-  grid-template-columns: 11% 33% 11% 33% 11%;
-  grid-template-rows: 250px 616px;
-  gap: 0px 0px;
-  grid-template-areas:
-    "Head Head Head Head Head"
-    ". inputs . contacts .";
 
   .head {
-    grid-area: Head;
+    grid-area: head;
     text-align: center;
 
     h1 {
       font-family: "Raleway Bold";
-      font-size: 90px;
       color: #262626;
-      line-height: 65px;
-      margin-top: 70px;
     }
 
     p {
       font-family: "Raleway Light";
-      font-size: 20px;
       color: #262626;
-    }
-
-    :nth-child(2) {
-      margin-top: 50px;
     }
   }
 
@@ -65,7 +156,7 @@
     grid-area: inputs;
 
     .input {
-      width: 100%;
+      width: calc(100% - 20px);
       height: 50px;
       border: none;
       background-color: rgb(125, 223, 223);
@@ -75,10 +166,6 @@
       color: rgb(255, 255, 255);
       margin-bottom: 15px;
       padding-left: 20px;
-    }
-
-    .input:nth-child(1) {
-      margin-top: 50px;
     }
 
     .input:hover {
@@ -112,33 +199,21 @@
 
     h6 {
       font-family: "Raleway Bold";
-      font-size: 17px;
-      color: rgb(38, 38, 38);
-      margin-bottom: 4px;
     }
 
     p {
       font-family: "Raleway Light";
-      font-size: 20px;
-      color: rgb(38, 38, 38);
-      margin-bottom: 9px;
-    }
-
-    :nth-child(1) {
-      margin-top: 50px;
     }
   }
 }
 
 .bottom {
   margin: 0 auto;
-  max-width: 1500px;
-  min-width: 320px;
-  width: 100%;
-  height: 90px;
+  min-height: 90px;
   display: flex;
   background-color: rgb(38, 38, 38);
   justify-content: space-around;
+  align-items: center;
 
   :nth-child(2) {
     font-family: "Pacifico";
@@ -147,7 +222,6 @@
   }
 
   p {
-    margin-top: 40px;
     font-family: "Raleway Light";
     font-size: 16px;
     color: rgb(185, 185, 185);
