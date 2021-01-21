@@ -84,7 +84,7 @@
     gap: 0 0;
         grid-template-areas: "head head head head head" ". inputs . contacts .";
   }
-  .grid-container .head h1 {
+  .grid-container .head h2 {
     font-size: 90px;
     line-height: 65px;
     margin-top: 70px;
@@ -131,7 +131,7 @@
   text-align: center;
 }
 
-.grid-container .head h1 {
+.grid-container .head h2 {
   font-family: "Raleway Bold", sans-serif;
   color: #262626;
 }
@@ -221,6 +221,7 @@
 
 .grid-container .contacts h6 {
   font-family: "Raleway Bold", sans-serif;
+  text-transform: uppercase;
 }
 
 .grid-container .contacts p {

@@ -88,7 +88,7 @@
       ". inputs . contacts .";
 
     .head {
-      h1 {
+      h2 {
         font-size: 90px;
         line-height: 65px;
         margin-top: 70px;
@@ -141,7 +141,7 @@
     grid-area: head;
     text-align: center;
 
-    h1 {
+    h2 {
       font-family: "Raleway Bold", sans-serif;
       color: #262626;
     }
@@ -177,8 +177,52 @@
       margin-bottom: 0;
     }
 
+    .input:nth-child(4)::-webkit-input-placeholder {
+      transform: translate3d(0, -95px, 0);
+    }
+
+    .input:nth-child(4)::-moz-placeholder {
+      transform: translate3d(0, -95px, 0);
+    }
+
+    .input:nth-child(4):-ms-input-placeholder {
+      transform: translate3d(0, -95px, 0);
+    }
+
+    .input:nth-child(4)::-ms-input-placeholder {
+      transform: translate3d(0, -95px, 0);
+    }
+
     .input:nth-child(4)::placeholder {
       transform: translate3d(0, -95px, 0);
+    }
+
+    .input::-webkit-input-placeholder {
+      font-family: "Raleway Light", sans-serif;
+      font-size: 15px;
+        color: rgb(255, 255, 255);
+        
+    }
+
+    .input::-moz-placeholder {
+      font-family: "Raleway Light", sans-serif;
+      font-size: 15px;
+        color: rgb(255, 255, 255);
+        
+    }
+
+    .input:-ms-input-placeholder {
+      font-family: "Raleway Light", sans-serif;
+      font-size: 15px;
+        color: rgb(255, 255, 255);
+        
+    }
+
+    .input::-ms-input-placeholder {
+      font-family: "Raleway Light", sans-serif;
+      font-size: 15px;
+        color: rgb(255, 255, 255);
+        
     }
 
     .input::placeholder {
@@ -200,6 +244,7 @@
 
     h6 {
       font-family: "Raleway Bold", sans-serif;
+      text-transform: uppercase;
     }
 
     p {
